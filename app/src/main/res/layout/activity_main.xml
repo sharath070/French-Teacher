@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient_bg"
+    android:onClick="sayColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/montserrat"
+        android:text="French Teacher"
+        android:textColor="#313030"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/yellow"
+        android:onClick="sayColor"
+        android:tag="yellow"
+        android:text="YELLOW"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/red"
+        android:onClick="sayColor"
+        android:tag="red"
+        android:text="RED"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/yellow"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/yellow"
+        app:layout_constraintTop_toBottomOf="@+id/yellow" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/green"
+        android:onClick="sayColor"
+        android:tag="green"
+        android:text="GREEN"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/red"
+        app:layout_constraintStart_toStartOf="@+id/red"
+        app:layout_constraintTop_toBottomOf="@+id/red" />
+
+    <Button
+        android:id="@+id/purple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="sayColor"
+        android:tag="purple"
+        android:text="PURPLE"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/green"
+        app:layout_constraintStart_toStartOf="@+id/green"
+        app:layout_constraintTop_toBottomOf="@+id/green" />
+
+    <Button
+        android:id="@+id/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        android:onClick="sayColor"
+        android:tag="black"
+        android:text="BLACK"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/purple"
+        app:layout_constraintStart_toStartOf="@+id/purple"
+        app:layout_constraintTop_toBottomOf="@+id/purple" />
+</androidx.constraintlayout.widget.ConstraintLayout>
